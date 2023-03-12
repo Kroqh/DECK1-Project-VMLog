@@ -5,12 +5,9 @@ from datetime import datetime
 import LogHandler
 
 delayTime = 5
-timesToRun = 5
+timesToRead = 5
 
-
-
-
-def run():
+def take_readings():
     count = 0
     time_of_reading = []
     pitch = []
@@ -19,7 +16,7 @@ def run():
 
 
     senseHat = sense_hat.SenseHat()
-    while count < timesToRun:
+    while count < timesToRead():
         orientation = senseHat.get_orientation_degrees()
         time_of_reading.append(datetime.now().strftime("%Y-%B-%d_%H_%M_%S"))
         pitch.append(orientation["pitch"])
@@ -55,5 +52,6 @@ def get_panel(pitch, roll):
     ]
     return panel
 
-
-run()
+def main():
+    while True:
+        take_readings()
