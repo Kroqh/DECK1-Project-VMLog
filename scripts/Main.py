@@ -28,7 +28,7 @@ def run():
         senseHat.set_pixels(get_panel(orientation["pitch"], orientation["roll"]))
         time.sleep(delayTime)
 
-    LogHandler.WriteLog(time_of_reading,pitch,roll)
+    LogHandler.WriteLog(time_of_reading, pitch, roll)
 
 
 
