@@ -4,8 +4,8 @@ import time
 from datetime import datetime
 import LogHandler
 
-delayTime = 5
-timesToRead = 5
+delayTime = 5 #time between readings
+timesToRead = 5 #amount of readings per log, multiply by delayTime to get the total time per log
 
 def take_readings():
     count = 0
