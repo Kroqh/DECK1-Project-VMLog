@@ -1,3 +1,5 @@
+LOGPATH = "/home/pi/Desktop/DECK1-Project-VMLog-main/logs/"
+
 def WriteLog(time, pitch, roll):
     """
             Writes a logfile, saves in logs/new by default, name is the first time reading
@@ -5,7 +7,7 @@ def WriteLog(time, pitch, roll):
             :param pitch: an array of the pitch readings
             :param roll: an array of the roll readings
         """
-    file = open("logs/new/" + time[0] + ".txt", "x")
+    file = open(LOGPATH + "new/" + time[0] + ".txt", "x")
 
     counter = 0
     for count in time:
@@ -16,10 +18,10 @@ def WriteLog(time, pitch, roll):
 def ReadLog(path):
     """
         Returns the log for a logfile
-        :param path: full path to the file for now, fx logs/test/2023-March-12_16_33_56.txt
+        :param path: from the next directory after logs, fx test/2023-March-12_16_33_56.txt
         :return: A dictionary of arrays, use time, pitch or roll to access the right array.
     """
-    file = open(path, "r")
+    file = open(LOGPATH + path, "r")
     lines = file.read().split("\n")
 
     time_of_reading = []
@@ -30,7 +32,7 @@ def ReadLog(path):
         if line != "":
             stripped_line = line.split("&")
             time_of_reading.append(stripped_line[0])
-            pitch.append(stripped_line[1])
-            roll.append(stripped_line[2])
+            pitch.append(float(stripped_line[1]))
+            roll.append(float(stripped_line[2]))
 
     return {"time": time_of_reading, "pitch": pitch, "roll": roll}
