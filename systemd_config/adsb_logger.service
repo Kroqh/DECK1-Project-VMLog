@@ -1,0 +1,15 @@
+[Unit]
+Description=adsb_logger
+After=multi-user.target
+
+[Service]
+User=pi
+Type=simple
+Restart=always
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /home/pi/scripts/iot/src/__init__.py
+
+[Install]
+WantedBy=multi-user.target
+
