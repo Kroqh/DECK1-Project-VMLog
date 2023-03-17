@@ -3,9 +3,11 @@ import sense_hat
 import time
 from datetime import datetime
 import LogHandler
+import Settings
 
-delayTime = 0.2 #time between readings
-timesToRead = 100 #amount of readings per log, multiply by delayTime to get the total time per log
+timesToRead = int(Settings.GetSetting("READSPERLOG"))
+delayTime = float(Settings.GetSetting("DELAYTIME"))
+
 
 def take_readings():
     count = 0
@@ -65,12 +67,7 @@ def get_panel(pitch, roll):
         O, O, O, O, O, O, O, O
     ]
         
-
-    
     return panel
 
-def main():
-    while True:
+while True:
         take_readings()
-
-take_readings()

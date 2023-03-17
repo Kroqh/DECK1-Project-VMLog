@@ -1,4 +1,6 @@
-LOGPATH = "/home/pi/Desktop/DECK1-Project-VMLog-main/logs/"
+import Settings
+
+LOGPATH = Settings.GetSetting("LOGPATH")
 
 def WriteLog(time, pitch, roll):
     """

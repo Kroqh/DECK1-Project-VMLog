@@ -6,23 +6,23 @@ These commands can be copy pasted to achive the described behaviour of the servi
 
 * Status of service
     ```bash  
-    $ systemctl status adsb_logger.service
+    $ systemctl status vm_logger.service
     ```
 * Starts the service
     ```bash
-    $ systemctl start adsb_logger.service
+    $ systemctl start vm_logger.service
     ```
 * Stops the service
     ```bash
-    $ systemctl stop adsb_logger.service
+    $ systemctl stop vm_logger.service
     ```
 * Enable the service
     ```bash
-    $ systemctl enable adsb_logger.service
+    $ systemctl enable vm_logger.service
     ```
 * disable the service
     ```bash
-    $ systemctl disable adsb_logger.service
+    $ systemctl disable vm_logger.service
     ```
 
 System wide `systemctl` related commands.

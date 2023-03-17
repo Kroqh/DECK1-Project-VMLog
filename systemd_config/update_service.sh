@@ -7,7 +7,7 @@ if ! [ $(id -u) = 0 ]; then
 fi
 
 # Service name / aka filename
-SERVICE_NAME="adsb_logger.service"
+SERVICE_NAME="vm_logger.service"
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 
