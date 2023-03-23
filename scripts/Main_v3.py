@@ -108,41 +108,22 @@ while True:
         
     # })
 
-    # print(f"Gyro (deg/sec) - x: " + {gx_d} + ", y: " + {gy_d} + ", z: " + {gz_d})
-    # print(f"Gyro (rad/sec) - x: {gx_r}, y: {gy_r}, z: {gz_r}")
+    print(f"Gyro (deg/sec) - x: " + {gx_d} + ", y: " + {gy_d} + ", z: " + {gz_d})
+    print(f"Gyro (rad/sec) - x: {gx_r}, y: {gy_r}, z: {gz_r}")
 
-    # print(f"Accel (deg) - x: {ax_d}, y: {ay_d}, z: {az_d}")
-    # print(f"Accel (G) - x: {ax_g}, y: {ay_g}, z: {az_g}")
+    print(f"Accel (deg) - x: {ax_d}, y: {ay_d}, z: {az_d}")
+    print(f"Accel (G) - x: {ax_g}, y: {ay_g}, z: {az_g}")
 
-    # print(f"Magnet (microtesla) - x: {mx}, y: {my}, z: {mz}")
+    print(f"Magnet (microtesla) - x: {mx}, y: {my}, z: {mz}")
 
-    # print(f"Orientation (degrees) - x: {roll_d}, y: {pitch_d}, z: {yaw_d}")
-    # print(f"Orientation (radians) - x: {roll_r}, y: {pitch_r}, z: {yaw_r}")
+    print(f"Orientation (degrees) - x: {roll_d}, y: {pitch_d}, z: {yaw_d}")
+    print(f"Orientation (radians) - x: {roll_r}, y: {pitch_r}, z: {yaw_r}")
 
-    # print("")
-
-    #print("Gyro (deg/sec), ")
-    #print({gx_d}, {gy_d}, {gz_d})
-    print("Gyro (rad/sec)")
-    print({gx_r}, {gy_r}, {gz_r})
-
-    #print("Accel (deg)")
-    #print({ax_d}, {ay_d}, {az_d})
-    print("Accel (G)")
-    print({ax_g}, {ay_g}, {az_g})
-
-    print("Magnet (microtesla)")
-    print({mx}, {my}, {mz})
-
-    print("Orientation (degrees)")
-    print({roll_d}, {pitch_d}, {yaw_d})
-    #print("Orientation (radians)")
-    #print({roll_r}, {pitch_r}, {yaw_r})
     print(f"lower limit: {base_x_lowerlimit}")
     print(f"upper limit: {base_x_upperlimit}")
     if (roll_d > base_x_lowerlimit) and (roll_d < base_x_upperlimit):
            print("hjælp")
 
-
     print("")
+    
     time.sleep(delay_seconds)
