@@ -44,7 +44,8 @@ def take_readings():
     LogHandler.write_log(time_of_reading, pitch, roll, g_force_x, g_force_y, g_force_y, succeded)
     if succeded:
         for log in LogHandler.get_all_logs_in_new():
-            succededBackLog = UploadHandler.post_http_single(LogHandler.read_log(log))
+            print(log)
+            succededBackLog = UploadHandler.post_http_single(LogHandler.read_log(log, "new"))
             if succededBackLog:
                 LogHandler.move_log(log)
 
