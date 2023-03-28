@@ -5,7 +5,7 @@ from datetime import datetime
 # import asyncio
 import LogHandler
 import Settings
-# import UploadHandler
+import UploadHandler
 
 # settings
 LINES_PER_LOG = int(Settings.get_setting("READSPERLOG"))
@@ -30,28 +30,34 @@ def get_orientation_degrees(sense):             # angle of each axis in degrees
     yaw_d   = round(ori['yaw'], DECIMALS_IMU)
     return roll_d, pitch_d, yaw_d
 
-# async def data_to_database(dict):                   # dict = dictionary (from sensor_readings)
-#     succeded = UploadHandler.post_http_single({
-#         "time": timestamp, 
-#         "pitch": pitch, 
-#         "roll": roll, 
-#         "g_force_x": g_force_x,
-#         "g_force_y": g_force_y, 
-#         "g_force_z": g_force_z
-#         })
-#     return succeded
+def get_gyroscope_radians(sense):               # rotational intensity of each axis in radians/second
+    gyr = sense.get_gyroscope_raw()
+    gx_r = round(gyr['x'], DECIMALS_IMU)
+    gy_r = round(gyr['y'], DECIMALS_IMU)
+    gz_r = round(gyr['z'], DECIMALS_IMU)
+    return gx_r, gy_r, gz_r
+
+def data_to_database(dict):                   # dict = dictionary (from sensor_readings)
+    #succeded = UploadHandler.post_http_single(dict)
+    # return succeded
+    # ????????
+    # if succeded:
+    #     for log in LogHandler.get_all_logs_in_new():
+    #         # print(log)
+    #         succededBackLog = UploadHandler.post_http_single(LogHandler.read_log(log, "new"))
+    #         if succededBackLog:
+    #             LogHandler.move_log(log)
+    
+    for log in LogHandler.get_all_logs_in_new():
+        succededBackLog = UploadHandler.post_http_single(LogHandler.read_log(log, "new"))
+        if succededBackLog:
+            LogHandler.move_log(log)
+    # return succededBackLog
 
 def data_to_file(dict):                       # dict = dictionary (from sensor_readings)
     LogHandler.write_log(dict)
     
-    # ????????
-    # if succeded:
-    #     for log in LogHandler.get_all_logs_in_new():
-    #         print(log)
-    #         succededBackLog = UploadHandler.post_http_single(LogHandler.read_log(log, "new"))
-    #         if succededBackLog:
-    #             LogHandler.move_log(log)
-    # return succeded
+    
 
 def sensor_readings():
     counter = 0
@@ -60,6 +66,7 @@ def sensor_readings():
     while counter < LINES_PER_LOG:
         roll, pitch, yaw = get_orientation_degrees()
         acc_x, acc_y, acc_z = get_accelerometer_geforce()
+        gyr_rads_x, gyr_rads_y, gyr_rads_z = get_gyroscope_radians(sense)
 
         dictionary[counter] = {
             "timestamp": datetime.now().strftime("%Y-%B-%d_%H_%M_%S"),    # datetime converted to text (string)
@@ -68,23 +75,25 @@ def sensor_readings():
             "yaw": yaw,
             "acc_x": acc_x,
             "acc_y": acc_y,
-            "acc_z": acc_z
+            "acc_z": acc_z,
+            "gyr_rads_x":gyr_rads_x,
+            "gyr_rads_y":gyr_rads_y,
+            "gyr_rads_z":gyr_rads_z
         }
         counter += 1
         time.sleep(DELAYTIME)
         
     return dictionary
 
-
 while True:
         #loop = asyncio.get_event_loop()
         #asyncio.ensure_future(data_readout = sensor_readings())
         data_readout = sensor_readings()
+        if data_readout != null:
+            data_to_file(data_readout)
 
-        # data_to_database(data_readout)
+        data_to_database(data_readout)
     
         #asyncio.ensure_future(data_to_file(data_readout))
 
         # data_to_database(timestamp, pitch, roll, g_force_x, g_force_y, g_force_z)
-    
-        data_to_file(data_readout)

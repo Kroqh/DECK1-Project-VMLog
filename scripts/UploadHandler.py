@@ -24,6 +24,7 @@ def post_http_single(log):
                     "g_force_y": log.get("g_force_y"),
                     "g_force_z": log.get("g_force_z")
             }})
+        
         headers = {
             'Content-Type': 'application/json',
             'Access-Control-Request-Headers': '*',
