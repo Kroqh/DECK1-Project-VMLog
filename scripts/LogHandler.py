@@ -4,25 +4,27 @@ from time import strptime
 
 import Settings
 
+LINES_PER_LOG = int(Settings.get_setting("READSPERLOG"))                    # number of lines of data per logfile
 LOGPATH = Settings.get_setting("LOGPATH")
+SEPARATOR = Settings.get_setting("SEPARATOR")                               # separator sign for values in file
 
-def write_log(time, pitch, roll, g_force_x, g_force_y, g_force_z, succesfullySavedAlready):
-    """
-            Writes a logfile, saves in logs/new by default, name is the first time reading
-            :param time: a string array of the time of the readings, already converted to string prior
-            :param pitch: an array of the pitch readings
-            :param roll: an array of the roll readings
-        """
-    if succesfullySavedAlready:
-        file = open(LOGPATH + "old/" + time[0] + ".txt", "x")
-    else:
-        file = open(LOGPATH + "new/" + time[0] + ".txt", "x")
+def write_log(dict):                                                        # dict = dictionary (from sensor_readings)
+
+    file = open(LOGPATH + "new/" + dict[0]["timestamp"] + ".txt", "x")      # file name is the first timestamp in the dataset
 
     counter = 0
-    for count in time:
-        file.write(time[counter] + "&" + str(pitch[counter]) + "&" + str(roll[counter]) + "&" + str(g_force_x[counter])
-                   + "&" + str(g_force_y[counter]) + "&" + str(g_force_z[counter]) + "\n")
-        counter = counter + 1
+
+    while counter < LINES_PER_LOG:
+        dict[counter]
+        file.write(
+            dict["timestamp"]  + SEPARATOR + 
+            str(dict["roll"])  + SEPARATOR +
+            str(dict["pitch"]) + SEPARATOR + 
+            str(dict["yaw"])   + SEPARATOR + 
+            str(dict["acc_x"]) + SEPARATOR + 
+            str(dict["acc_y"]) + SEPARATOR + 
+            str(dict["acc_z"]) + "\n")
+        counter += 1
     file.close()
 
 
