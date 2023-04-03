@@ -17,13 +17,21 @@ def post_http_single(log):
 
                 "document": {
                     "logger_id": logger_id,
-                    "timestamp": log.get("time"),
-                    "pitch": log.get("pitch"),
-                    "roll": log.get("roll"),
-                    "g_force_x": log.get("g_force_x"),
-                    "g_force_y": log.get("g_force_y"),
-                    "g_force_z": log.get("g_force_z")
-            }})
+                    "timestamp": log["timestamp"],
+
+                    "pitch": log["pitch"],
+                    "roll": log["roll"],
+                    "yaw": log[yaw],
+
+                    "acc_x": log["acc_x"],
+                    "acc_y": log["acc_y"],
+                    "acc_z": log["acc_z"],
+
+                    "gyr_x": log["gyr_x"],
+                    "gyr_y": log["gyr_y"],
+                    "gyr_z": log["gyr_z"],
+                }
+            })
         
         headers = {
             'Content-Type': 'application/json',

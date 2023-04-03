@@ -1,39 +1,45 @@
 import os
 import shutil
 from time import strptime
-
 import Settings
 
+# settings
 LINES_PER_LOG = int(Settings.get_setting("READSPERLOG"))                    # number of lines of data per logfile
 LOGPATH = Settings.get_setting("LOGPATH")
 SEPARATOR = Settings.get_setting("SEPARATOR")                               # separator sign for values in file
+NEWFOLDER = Settings.get_setting("FOLDER_NEW_LOGS")
+OLDFOLDER = Settings.get_setting("FOLDER_OLD_LOGS")
 
-def write_log(dict):                                                        # dict = dictionary (from sensor_readings)
-
-    file = open(LOGPATH + "new/" + dict[0]["timestamp"] + ".txt", "x")      # file name is the first timestamp in the dataset
-
-    counter = 0
-
-    while counter < LINES_PER_LOG:
-        dict[counter]
+# functions
+def write_log(data_list):
+    filename = data_list[0]
+    file = open(LOGPATH + NEWFOLDER + filename["timestamp"] + ".txt", "x")   # file name is the first timestamp in the dataset
+    for each_line in data_list:
+        dict = each_line
         file.write(
             dict["timestamp"]  + SEPARATOR + 
+
             str(dict["roll"])  + SEPARATOR +
             str(dict["pitch"]) + SEPARATOR + 
             str(dict["yaw"])   + SEPARATOR + 
+
             str(dict["acc_x"]) + SEPARATOR + 
             str(dict["acc_y"]) + SEPARATOR + 
-            str(dict["acc_z"]) + "\n")
-        counter += 1
+            str(dict["acc_z"]) + SEPARATOR +
+
+            str(dict["gyr_x"]) + SEPARATOR + 
+            str(dict["gyr_y"]) + SEPARATOR + 
+            str(dict["gyr_z"]) + "\n"
+        )
     file.close()
 
 
-def get_all_logs_in_new():
-    return os.listdir(LOGPATH + "new/")
+def get_path_new_logs():
+    return os.listdir(LOGPATH + NEWFOLDER)
 
 
-def move_log(path):
-    shutil.move(LOGPATH + "new/" + path, LOGPATH + "old/")
+def move_log(file_name):
+    shutil.move(LOGPATH + NEWFOLDER + file_name, LOGPATH + OLDFOLDER)
 
 def read_log(file_name, directory):
     """
