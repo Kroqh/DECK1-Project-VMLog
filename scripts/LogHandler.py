@@ -14,21 +14,26 @@ def write_log(time, pitch, roll, g_force_x, g_force_y, g_force_z, succesfullySav
             :param roll: an array of the roll readings
         """
     if succesfullySavedAlready:
-        file = open(LOGPATH + "old/" + time[0] + ".txt", "x")
+        logfile = open(LOGPATH + "old/" + time[0] + ".txt", "x")
     else:
-        file = open(LOGPATH + "new/" + time[0] + ".txt", "x")
+        logfile = open(LOGPATH + "new/" + time[0] + ".txt", "x")
 
     counter = 0
     for count in time:
-        file.write(time[counter] + "&" + str(pitch[counter]) + "&" + str(roll[counter]) + "&" + str(g_force_x[counter])
+        logfile.write(time[counter] + "&" + str(pitch[counter]) + "&" + str(roll[counter]) + "&" + str(g_force_x[counter])
                    + "&" + str(g_force_y[counter]) + "&" + str(g_force_z[counter]) + "\n")
         counter = counter + 1
-    file.close()
+    logfile.close()
 
 
 def get_all_logs_in_new():
     return os.listdir(LOGPATH + "new/")
 
+def write_to_system_log(text):
+    print(text)
+    sysfile = open(LOGPATH + "syslog/syslog.txt", "a")
+    sysfile.write(text + "\n")
+    sysfile.close()
 
 def move_log(path):
     shutil.move(LOGPATH + "new/" + path, LOGPATH + "old/")
@@ -41,8 +46,8 @@ def read_log(file_name, directory):
         :return: A dictionary of arrays, use time, pitch or roll, g_force_x, g_force_y, g_force_z to access the right array.
     """
     
-    file = open(LOGPATH + directory + "/" +  file_name, "r")
-    lines = file.read().split("\n")
+    logfile = open(LOGPATH + directory + "/" +  file_name, "r")
+    lines = logfile.read().split("\n")
 
     time_of_reading = []
     pitch = []
@@ -54,7 +59,7 @@ def read_log(file_name, directory):
     for line in lines:
         if line != "":
             stripped_line = line.split("&")
-            time_of_reading.append(strptime(stripped_line[0], "%Y-%B-%d_%H_%M_%S"))
+            time_of_reading.append(strptime(stripped_line[0], "%Y-%m-%d_%H_%M_%S"))
             pitch.append(float(stripped_line[1]))
             roll.append(float(stripped_line[2]))
             g_force_x.append(float(stripped_line[3]))

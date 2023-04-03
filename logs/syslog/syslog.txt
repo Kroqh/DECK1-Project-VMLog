@@ -1,0 +1,595 @@
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.00784707069397
+Log succesfully uploaded with id: {"insertedId":"642a05322bacf2626b6c90dc"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.977229356765747
+Log succesfully uploaded with id: {"insertedId":"642a05472a3f64ef670e6924"}
+Logfile creation finished
+
+Logfile creation initated
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.030019521713257
+Log succesfully uploaded with id: {"insertedId":"642a05ad26bab9a84bfbcb89"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 52.54467272758484
+Log succesfully uploaded with id: {"insertedId":"642a05c153cf9413d67d21ad"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.97376275062561
+Log succesfully uploaded with id: {"insertedId":"642a05d653cf9413d67d2304"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.005917072296143
+Log succesfully uploaded with id: {"insertedId":"642a05ea26bab9a84bfbcf98"}
+Logfile creation finished
+
+Logfile creation initated
+Logfile creation initated at 1680475642.837489
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.981955528259277
+Log succesfully uploaded with id: {"insertedId":"642a05ff2a3f64ef670e75a0"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.966065883636475
+Log succesfully uploaded with id: {"insertedId":"642a061326bab9a84bfbd28a"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.965210676193237
+Log succesfully uploaded with id: {"insertedId":"642a06272a3f64ef670e7846"}
+Logfile creation finished
+
+Logfile creation initated
+Logfile creation initated at 2023-April-03_00_48_09
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.98935341835022
+Log succesfully uploaded with id: {"insertedId":"642a063c2bacf2626b6ca2a5"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.021934032440186
+Log succesfully uploaded with id: {"insertedId":"642a063e53cf9413d67d29fb"}
+Logfile creation finished
+
+Logfile creation initated at 2023-April-03_00_48_30
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.985003232955933
+Log succesfully uploaded with id: {"insertedId":"642a065053cf9413d67d2b4b"}
+Logfile creation finished
+
+Logfile creation initated
+Logfile creation initated at 2023-Apr-03_00_48_56
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.02020025253296
+Log succesfully uploaded with id: {"insertedId":"642a066526bab9a84bfbd824"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.034859657287598
+Log succesfully uploaded with id: {"insertedId":"642a066c26bab9a84bfbd8a4"}
+Logfile creation finished
+
+Logfile creation initated at 2023-Apr-03_00_49_16
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.98623752593994
+Log succesfully uploaded with id: {"insertedId":"642a067926bab9a84bfbd978"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.00023603439331
+Log succesfully uploaded with id: {"insertedId":"642a06812bacf2626b6ca795"}
+Logfile creation finished
+
+Logfile creation initated at 2023-Apr-03_00_49_37
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.02063488960266
+Log succesfully uploaded with id: {"insertedId":"642a068e53cf9413d67d2f8f"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.9878408908844
+Log succesfully uploaded with id: {"insertedId":"642a06a253cf9413d67d3111"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.97158193588257
+Log succesfully uploaded with id: {"insertedId":"642a06b626bab9a84bfbddd4"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.991195678710938
+Log succesfully uploaded with id: {"insertedId":"642a06cb53cf9413d67d33b6"}
+Logfile creation finished
+
+Logfile creation initated
+Logfile creation initated at 2023-04-03_00_51_04
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.997791051864624
+Log succesfully uploaded with id: {"insertedId":"642a06e02bacf2626b6cae1b"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_51_12
+Logfile creation initated
+Logfile creation initated at 2023-04-03_00_51_23
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.989120483398438
+Log succesfully uploaded with id: {"insertedId":"642a06f42bacf2626b6caf9e"}
+Logfile creation finished
+
+Logfile creation initated
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.971810817718506
+Log succesfully uploaded with id: {"insertedId":"642a070853cf9413d67d37ef"}
+Logfile creation finished
+
+Logfile creation initated
+Logfile creation initated at 2023-04-03_00_52_17
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.071567058563232
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f6b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_52_37
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.971444606781006
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f9f0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_52_57
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.964427709579468
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f590>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_53_17
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.987602949142456
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f970>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_53_37
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.967284202575684
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f590>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_53_57
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.9669406414032
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fa90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_54_18
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.967199563980103
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f570>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_54_38
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.97027277946472
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fb10>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_54_58
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.970564365386963
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f210>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_55_18
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.970966815948486
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fb70>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_55_38
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.971065521240234
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f630>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_55_58
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.972426891326904
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fbd0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_56_18
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.966571807861328
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f6b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_56_38
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.966144800186157
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fc30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_56_58
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.969584941864014
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91f9b0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_57_18
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.9627628326416
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fc90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_57_38
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.96671748161316
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fab0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_57_58
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.962549448013306
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fcf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_58_18
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.962669372558594
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fad0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_58_38
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.96674871444702
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf91fd50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_00_58_58
+Logfile creation initated at 2023-04-03_00_59_15
+Logfile creation initated at 2023-04-03_01_00_04
+Theoretical time it should have taken: 20.0
+Actual time taken: 16.24519634246826
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf9e5b50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_00_21
+Logfile creation initated at 2023-04-03_01_00_41
+Theoretical time it should have taken: 20.0
+Actual time taken: 8.669153690338135
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf90cb50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_00_50
+Logfile creation initated at 2023-04-03_01_02_47
+Theoretical time it should have taken: 20.0
+Actual time taken: 16.04632306098938
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf98bb50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_03_03
+Logfile creation initated at 2023-04-03_01_03_21
+Theoretical time it should have taken: 20.0
+Actual time taken: 15.586928606033325
+Upload failed, exception: HTTPSConnectionPool(host='westeurope.azure.data.mongodb-api.com', port=443): Max retries exceeded with url: /app/data-mgxzs/endpoint/data/v1/action/insertOne (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xaf95eb30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_03_36
+Logfile creation initated at 2023-04-03_01_04_13
+Logfile creation initated at 2023-04-03_01_04_37
+Logfile creation initated at 2023-04-03_01_05_00
+Logfile creation initated at 2023-04-03_01_05_07
+Logfile creation initated at 2023-04-03_01_05_45
+Logfile creation initated at 2023-04-03_01_05_53
+Logfile creation initated at 2023-04-03_01_06_05
+Logfile creation initated at 2023-04-03_01_09_59
+Logfile creation initated at 2023-04-03_01_10_10
+Logfile creation initated at 2023-04-03_01_10_34
+Theoretical time it should have taken: 20.0
+Actual time taken: 8.926551103591919
+Log succesfully uploaded with id: {"insertedId":"642a86a353cf9413d68623b2"}
+Found 2023-04-03_00_54_38.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a453cf9413d68623d4"}
+Found 2023-04-03_00_52_58.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a42bacf2626b759ce4"}
+Found 2023-04-03_00_56_18.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a52a3f64ef671771cc"}
+Found 2023-04-03_00_54_58.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a52a3f64ef671771d2"}
+Found 2023-04-03_00_57_18.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a653cf9413d68623e2"}
+Found 2023-04-03_00_56_58.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a62bacf2626b759cf0"}
+Found 2023-04-03_00_53_18.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a72a3f64ef671771db"}
+Found 2023-04-03_00_58_18.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a726bab9a84b04cf5f"}
+Found 2023-04-03_00_58_38.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a753cf9413d68623f2"}
+Found 2023-04-03_01_00_05.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a853cf9413d68623fc"}
+Found 2023-04-03_01_00_42.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a82bacf2626b759d1b"}
+Found 2023-04-03_00_52_17.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a926bab9a84b04cf87"}
+Found 2023-04-03_00_55_18.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86a926bab9a84b04cf97"}
+Found 2023-04-03_00_52_37.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86aa2a3f64ef67177222"}
+Found 2023-04-03_00_57_58.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86aa2bacf2626b759d49"}
+Found 2023-04-03_01_03_21.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86aa2bacf2626b759d57"}
+Found 2023-04-03_00_54_18.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86ab53cf9413d6862450"}
+Found 2023-04-03_00_53_38.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86ab26bab9a84b04cfd0"}
+Found 2023-04-03_00_56_38.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86ab2bacf2626b759d7d"}
+Found 2023-04-03_00_55_38.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86ac53cf9413d686247a"}
+Found 2023-04-03_01_02_47.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86ac2a3f64ef67177274"}
+Found 2023-04-03_00_55_58.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86ac26bab9a84b04d009"}
+Found 2023-04-03_00_53_58.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86ad2a3f64ef6717728b"}
+Found 2023-04-03_00_57_38.txt in backlog, will attempt to uploaded
+Log succesfully uploaded with id: {"insertedId":"642a86ad26bab9a84b04d017"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_10_57
+Theoretical time it should have taken: 20.0
+Actual time taken: 8.470184564590454
+Log succesfully uploaded with id: {"insertedId":"642a86b62bacf2626b759e4c"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_11_06
+Theoretical time it should have taken: 20.0
+Actual time taken: 7.404018402099609
+Log succesfully uploaded with id: {"insertedId":"642a86be26bab9a84b04d146"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_11_14
+Theoretical time it should have taken: 20.0
+Actual time taken: 8.786701679229736
+Log succesfully uploaded with id: {"insertedId":"642a86c753cf9413d686268c"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_11_23
+Theoretical time it should have taken: 20.0
+Actual time taken: 9.106977701187134
+Log succesfully uploaded with id: {"insertedId":"642a86d153cf9413d686275e"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_11_32
+Theoretical time it should have taken: 20.0
+Actual time taken: 8.662405490875244
+Log succesfully uploaded with id: {"insertedId":"642a86da2a3f64ef67177612"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_11_42
+Theoretical time it should have taken: 20.0
+Actual time taken: 7.956770658493042
+Log succesfully uploaded with id: {"insertedId":"642a86e32bacf2626b75a1e3"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_11_50
+Theoretical time it should have taken: 20.0
+Actual time taken: 6.8424389362335205
+Log succesfully uploaded with id: {"insertedId":"642a86ea53cf9413d6862936"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_11_57
+Logfile creation initated at 2023-04-03_01_12_06
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.996025800704956
+Log succesfully uploaded with id: {"insertedId":"642a87072a3f64ef6717799a"}
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_12_26
+Logfile creation initated at 2023-04-03_01_15_05
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.99373435974121
+Log succesfully uploaded with id: {"insertedId":"642a87ba53cf9413d6863925"}
+Postupload time taken: 20.38443613052368
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_15_26
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.96527647972107
+Log succesfully uploaded with id: {"insertedId":"642a87ce26bab9a84b04e5ff"}
+Postupload time taken: 20.292362451553345
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_15_46
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.967761754989624
+Log succesfully uploaded with id: {"insertedId":"642a87e32a3f64ef67178a33"}
+Postupload time taken: 20.607856035232544
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_16_07
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.00143265724182
+Log succesfully uploaded with id: {"insertedId":"642a87f753cf9413d6863db8"}
+Postupload time taken: 20.346463918685913
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_16_27
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.9663143157959
+Log succesfully uploaded with id: {"insertedId":"642a880c2a3f64ef67178d6e"}
+Postupload time taken: 20.330543041229248
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_16_48
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.965652465820312
+Log succesfully uploaded with id: {"insertedId":"642a88202bacf2626b75ba26"}
+Postupload time taken: 20.32366394996643
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_17_08
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.969988107681274
+Log succesfully uploaded with id: {"insertedId":"642a88352a3f64ef6717905f"}
+Postupload time taken: 20.306777715682983
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_17_28
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.968008279800415
+Log succesfully uploaded with id: {"insertedId":"642a884953cf9413d6864405"}
+Postupload time taken: 20.524763822555542
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_17_49
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.987481117248535
+Log succesfully uploaded with id: {"insertedId":"642a885e2a3f64ef6717939e"}
+Postupload time taken: 20.32218098640442
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_18_09
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.96430802345276
+Log succesfully uploaded with id: {"insertedId":"642a887253cf9413d68646df"}
+Postupload time taken: 20.30133032798767
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_18_30
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.98408007621765
+Log succesfully uploaded with id: {"insertedId":"642a88862a3f64ef6717968a"}
+Postupload time taken: 20.35642147064209
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_18_50
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.96411633491516
+Log succesfully uploaded with id: {"insertedId":"642a889b53cf9413d68649fa"}
+Postupload time taken: 20.347870111465454
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_19_10
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.987679481506348
+Log succesfully uploaded with id: {"insertedId":"642a88af2a3f64ef67179956"}
+Postupload time taken: 20.337143182754517
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_19_31
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.996622562408447
+Log succesfully uploaded with id: {"insertedId":"642a88c426bab9a84b04f83a"}
+Postupload time taken: 20.364192008972168
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_19_51
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.98023748397827
+Log succesfully uploaded with id: {"insertedId":"642a88d82bacf2626b75c795"}
+Postupload time taken: 20.347686290740967
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_20_12
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.963956832885742
+Log succesfully uploaded with id: {"insertedId":"642a88ec53cf9413d6864fe3"}
+Postupload time taken: 20.34125542640686
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_20_32
+VMLogger initiated at 2023-04-03_01_21_41 with the following parameters: 200 readings per log  with a 0.1s delay
+Logfile creation initated at 2023-04-03_01_21_41
+VMLogger initiated at 2023-04-03_01_22_02 with the following parameters: 200 readings per log  with a 0.1s delay
+
+Logfile creation initated at 2023-04-03_01_22_02
+VMLogger initiated at 2023-04-03_01_22_13 with the following parameters: 200 readings per log  with a 0.1s delay
+
+Logfile creation initated at 2023-04-03_01_22_13
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.99527907371521
+Log succesfully uploaded with id: {"insertedId":"642a89652a3f64ef6717a725"}
+Postupload time taken: 20.360024213790894
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_22_33
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.964730501174927
+Log succesfully uploaded with id: {"insertedId":"642a897a26bab9a84b0505f8"}
+Postupload time taken: 20.333866119384766
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_22_54
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.98272156715393
+Log succesfully uploaded with id: {"insertedId":"642a898e2a3f64ef6717aa50"}
+Postupload time taken: 20.39459800720215
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_23_14
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.00393581390381
+Log succesfully uploaded with id: {"insertedId":"642a89a353cf9413d6865d7e"}
+Postupload time taken: 20.373740434646606
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_23_34
+Theoretical time it should have taken: 20.0
+Actual time taken: 19.976824045181274
+Log succesfully uploaded with id: {"insertedId":"642a89b72a3f64ef6717ad60"}
+Postupload time taken: 20.31462001800537
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_23_55
+VMLogger initiated at 2023-04-03_01_25_25 with the following parameters: 200 readings per log  with a 0.1s delay
+
+Logfile creation initated at 2023-04-03_01_25_25
+Theoretical time it should have taken: 20.0
+Actual time taken: 20.022006034851074
+Log succesfully uploaded with id: {"insertedId":"642a8a6f26bab9a84b05189a"}
+Postupload time taken: 20.446451663970947
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_25_45
+VMLogger initiated at 2023-04-03_01_28_05 with the following parameters: 3000 readings per log  with a 0.1s delay
+
+Logfile creation initated at 2023-04-03_01_28_05
+Theoretical time it should have taken: 300.0
+Actual time taken: 300.0131597518921
+Log succesfully uploaded with id: {"insertedId":"642a8c2826bab9a84b053c89"}
+Postupload time taken: 300.63587498664856
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_33_06
+VMLogger initiated at 2023-04-03_01_40_07 with the following parameters: 3000 readings per log  with a 0.1s delay
+
+Logfile creation initated at 2023-04-03_01_40_07
+Theoretical time it should have taken: 300.0
+Actual time taken: 299.9977915287018
+Log succesfully uploaded with id: {"insertedId":"642a8efa2bacf2626b764361"}
+Postupload time taken: 300.879921913147
+Logfile creation finished
+
+Logfile creation initated at 2023-04-03_01_45_08

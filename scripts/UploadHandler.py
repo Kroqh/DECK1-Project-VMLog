@@ -1,7 +1,7 @@
 import requests
 import json
 import Settings
-
+import LogHandler
 api_key = Settings.get_setting("KEY")
 logger_id = Settings.get_setting("LOGGERID")
 
@@ -30,9 +30,17 @@ def post_http_single(log):
             'api-key': api_key,
         }
         response = requests.request("POST", url, headers=headers, data=payload)
-        print(response.text)
-        return response.ok
+        LogHandler.write_to_system_log
+        if response.ok:
+            LogHandler.write_to_system_log("Log succesfully uploaded with id: " + response.text)
+            return True
+        else:
+            LogHandler.write_to_system_log("Log upload failed, error message: " + response.text)
+            return False
+        
+        print()
+        
     except Exception as err:
-        print(str(err))
+        LogHandler.write_to_system_log("Upload failed, exception: " + str(err))
         return False
 
