@@ -1,8 +1,10 @@
 
 from sense_hat import SenseHat
-# import time
+import time
 from datetime import datetime
-import asyncio
+# import asyncio
+import pandas as pd
+import numpy as np
 import LogHandler
 import Settings
 import UploadHandler
@@ -12,9 +14,7 @@ LINES_PER_LOG = int(Settings.get_setting("READSPERLOG"))
 DELAYTIME = float(Settings.get_setting("DELAYTIME"))
 DECIMALS_IMU = int(Settings.get_setting("DECIMALROUNDING")) # motion sensors (gyro, accelerometer, magnetometer)
 # DECIMALS_ENV = int(Settings.get_setting("DECIMALROUNDING")) # enviromental sensor (humidity, temperature)
-TILT_LIMIT_DEGREES = int(Settings.get_setting("WARNINGDEGRESS"))
-
-sense = SenseHat()
+# TILT_LIMIT_DEGREES = int(Settings.get_setting("WARNINGDEGRESS"))
 
 #functions
 def get_accelerometer_geforce(sense):           # acceleration intensity (gravitational pull) on each axis measured in G
@@ -38,91 +38,77 @@ def get_gyroscope_radians(sense):               # rotational intensity of each a
     gz_r = round(gyr['z'], DECIMALS_IMU)
     return gx_r, gy_r, gz_r
 
-def data_to_database():                   # dict = dictionary (from sensor_readings)
-    #succeded = UploadHandler.post_http_single(dict)
-    # return succeded
-    # ????????
-    # if succeded:
-    #     for log in LogHandler.get_all_logs_in_new():
-    #         # print(log)
-    #         succededBackLog = UploadHandler.post_http_single(LogHandler.read_log(log, "new"))
-    #         if succededBackLog:
-    #             LogHandler.move_log(log)
-    
+def data_to_database():
     for log_file in LogHandler.get_path_new_logs():
         succededBackLog = UploadHandler.post_http_single(LogHandler.read_log(log_file, "new"))
         if succededBackLog:
             LogHandler.move_log(log_file)
     # return succededBackLog
 
-def data_to_file(dict):                       # dict = dictionary (from sensor_readings)
-    LogHandler.write_log(dict)
-    
-"""    
-# v1
+def data_to_file(readings_df):                       # dict = dictionary (from sensor_readings)
+    LogHandler.write_log(readings_df)
+
 def sensor_readings(sense):
-    line_counter = 0
-    dictionary = {}
 
-    while line_counter < LINES_PER_LOG:
-        roll, pitch, yaw = get_orientation_degrees(sense)
-        acc_x, acc_y, acc_z = get_accelerometer_geforce(sense)
-        gyr_rads_x, gyr_rads_y, gyr_rads_z = get_gyroscope_radians(sense)
+    df = pd.DataFrame(          # predefining columns and data types for memory efficiency
+        columns={
+            # name : data type
+            "timestamp": np.object,
+            
+            "roll": np.float32,
+            "pitch": np.float32,
+            "yaw": np.float32,
 
-        dictionary[line_counter] = {
-            "timestamp": datetime.now().strftime("%Y-%B-%d_%H_%M_%S"),    # datetime converted to text (string)
-            "roll": roll,
-            "pitch": pitch,
-            "yaw": yaw,
-            "acc_x": acc_x,
-            "acc_y": acc_y,
-            "acc_z": acc_z,
-            "gyr_rads_x": gyr_rads_x,
-            "gyr_rads_y": gyr_rads_y,
-            "gyr_rads_z": gyr_rads_z
+            "acc_x": np.float32,
+            "acc_y": np.float32,
+            "acc_z": np.float32,
+
+            "gyr_x": np.float32,
+            "gyr_y": np.float32,
+            "gyr_z": np.float32,
         }
-        line_counter += 1
-        time.sleep(DELAYTIME)
-        
-    return dictionary
-"""
-# v2
-def sensor_readings(sense):
-    for line in range(LINES_PER_LOG):
+    )
+    
+    for line in range(LINES_PER_LOG):   # runs loop from 0 to {LINES_PER_LOG}
 
         timestamp = datetime.now().strftime("%Y-%B-%d_%H_%M_%S")
-        roll, pitch, yaw    = get_orientation_degrees(sense)
+        roll, pitch, yaw = get_orientation_degrees(sense)
         acc_x, acc_y, acc_z = get_accelerometer_geforce(sense)
         gyr_x, gyr_y, gyr_z = get_gyroscope_radians(sense)
 
-        readings = {
-            "timestamp": [].append(timestamp),
+        reading={                     # dictionary with sensor data from this loop cycle
+            "timestamp": timestamp,
 
-            "roll":  [].append(roll),
-            "pitch": [].append(pitch),
-            "yaw":   [].append(yaw),
+            "roll": roll,
+            "pitch": pitch,
+            "yaw": yaw,
 
-            "acc_x": [].append(acc_x),
-            "acc_y": [].append(acc_y),
-            "acc_z": [].append(acc_z),
+            "acc_x": acc_x,
+            "acc_y": acc_y,
+            "acc_z": acc_z,
 
-            "gyr_x": [].append(gyr_x),
-            "gyr_y": [].append(gyr_y),
-            "gyr_z": [].append(gyr_z)
+            "gyr_x": gyr_x,
+            "gyr_y": gyr_y,
+            "gyr_z": gyr_z
         }
-        asyncio.sleep(DELAYTIME)    # for async usage
-    return readings
+        df = df.append(reading, ignore_index=True)  # add data from dictionary to dataframe 
+        # asyncio.sleep(DELAYTIME)    # for async usage
+        time.sleep(DELAYTIME)
+    print(df.info())
+    print(df.head())
+    return df
 
 # MAIN
 
+sense = SenseHat()
 while True:
         #loop = asyncio.get_event_loop()
         #asyncio.ensure_future(data_readout = sensor_readings())
-        readings = sensor_readings(sense)
-        if readings != null:
-            data_to_file(readings)
+        readings_df = sensor_readings(sense)
+        if (readings_df.size != 0):
+            data_to_file(readings_df)
 
-        data_to_database(readings)
+        # data_to_database(readings_df)
     
         #asyncio.ensure_future(data_to_file(data_readout))
 

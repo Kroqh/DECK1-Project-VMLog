@@ -1,37 +1,45 @@
 import os
 import shutil
+import pandas as pd
+import numpy as np
 from time import strptime
 import Settings
 
 # settings
 LINES_PER_LOG = int(Settings.get_setting("READSPERLOG"))                    # number of lines of data per logfile
-LOGPATH = Settings.get_setting("LOGPATH")
+LOGPATH = Settings.get_setting("LOGPATH")                                   # local folder path
 SEPARATOR = Settings.get_setting("SEPARATOR")                               # separator sign for values in file
-NEWFOLDER = Settings.get_setting("FOLDER_NEW_LOGS")
-OLDFOLDER = Settings.get_setting("FOLDER_OLD_LOGS")
+NEWFOLDER = Settings.get_setting("FOLDER_NEW_LOGS")                         # local folder name
+OLDFOLDER = Settings.get_setting("FOLDER_OLD_LOGS")                         # local folder name
 
 # functions
-def write_log(data_list):
-    filename = data_list[0]
-    file = open(LOGPATH + NEWFOLDER + filename["timestamp"] + ".txt", "x")   # file name is the first timestamp in the dataset
-    for each_line in data_list:
-        dict = each_line
-        file.write(
-            dict["timestamp"]  + SEPARATOR + 
 
-            str(dict["roll"])  + SEPARATOR +
-            str(dict["pitch"]) + SEPARATOR + 
-            str(dict["yaw"])   + SEPARATOR + 
+def write_log(readings_df):
+    #df = pd.DataFrame()
+    #df = readings_df
+    readings_df.to_parquet(LOGPATH + NEWFOLDER + readings_df.iloc[0,0] + ".parquet", compression=None)
 
-            str(dict["acc_x"]) + SEPARATOR + 
-            str(dict["acc_y"]) + SEPARATOR + 
-            str(dict["acc_z"]) + SEPARATOR +
+# def write_log(data_list):
+#     filename = data_list[0]
+#     file = open(LOGPATH + NEWFOLDER + filename["timestamp"] + ".txt", "x")   # file name is the first timestamp in the dataset
+#     for each_line in data_list:
+#         dict = each_line
+#         file.write(
+#             dict["timestamp"]  + SEPARATOR + 
 
-            str(dict["gyr_x"]) + SEPARATOR + 
-            str(dict["gyr_y"]) + SEPARATOR + 
-            str(dict["gyr_z"]) + "\n"
-        )
-    file.close()
+#             str(dict["roll"])  + SEPARATOR +
+#             str(dict["pitch"]) + SEPARATOR + 
+#             str(dict["yaw"])   + SEPARATOR + 
+
+#             str(dict["acc_x"]) + SEPARATOR + 
+#             str(dict["acc_y"]) + SEPARATOR + 
+#             str(dict["acc_z"]) + SEPARATOR +
+
+#             str(dict["gyr_x"]) + SEPARATOR + 
+#             str(dict["gyr_y"]) + SEPARATOR + 
+#             str(dict["gyr_z"]) + "\n"
+#         )
+#     file.close()
 
 
 def get_path_new_logs():

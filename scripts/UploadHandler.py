@@ -2,8 +2,8 @@ import requests
 import json
 import Settings
 
-api_key = Settings.get_setting("KEY")
-logger_id = Settings.get_setting("LOGGERID")
+API_KEY = Settings.get_setting("KEY")
+LOGGER_ID = Settings.get_setting("LOGGERID")
 
 def post_http_single(log):
     
@@ -16,12 +16,12 @@ def post_http_single(log):
                 "dataSource": "VMLog",
 
                 "document": {
-                    "logger_id": logger_id,
+                    "logger_id": LOGGER_ID,
                     "timestamp": log["timestamp"],
 
                     "pitch": log["pitch"],
                     "roll": log["roll"],
-                    "yaw": log[yaw],
+                    "yaw": log["yaw"],
 
                     "acc_x": log["acc_x"],
                     "acc_y": log["acc_y"],
@@ -36,7 +36,7 @@ def post_http_single(log):
         headers = {
             'Content-Type': 'application/json',
             'Access-Control-Request-Headers': '*',
-            'api-key': api_key,
+            'api-key': API_KEY,
         }
         response = requests.request("POST", url, headers=headers, data=payload)
         print(response.text)
