@@ -17,7 +17,9 @@ OLDFOLDER = Settings.get_setting("FOLDER_OLD_LOGS")                         # lo
 def write_log(readings_df):
     #df = pd.DataFrame()
     #df = readings_df
+    print("Started file to parquet")
     readings_df.to_parquet(LOGPATH + NEWFOLDER + readings_df.iloc[0,0] + ".parquet", compression=None)
+    print("Finished file to parquet")
 
 # def write_log(data_list):
 #     filename = data_list[0]
