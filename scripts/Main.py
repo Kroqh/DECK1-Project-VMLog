@@ -58,7 +58,6 @@ def get_gyroscope_radians(sense):               # rotational intensity of each a
     gz_r = round(gyr['z'], DECIMALS)
     return gx_r, gy_r, gz_r
 
-@timeit
 def setup_dataframe():
     df = pd.DataFrame(          # predefining columns and data types for memory efficiency
         # column name : data type (configurable via NumPy e.g. np.float32)
@@ -81,7 +80,6 @@ def setup_dataframe():
     )
     return df
 
-@timeit
 def set_dtypes(df):
   df["timestamp"] = df["timestamp"].astype(np.datetime64)
 
@@ -101,14 +99,15 @@ def set_dtypes(df):
 @timeit
 def get_sensor_readings(sense):
     df = setup_dataframe()
+
     for line in range(LINES_PER_LOG):
         timestamp = datetime.datetime.now()
-        # roll, pitch, yaw = get_orientation_degrees(sense)
-        # acc_x, acc_y, acc_z = get_accelerometer_geforce(sense)
-        # gyr_x, gyr_y, gyr_z = get_gyroscope_radians(sense)
-        roll, pitch, yaw = fake_sensor_reading()
-        acc_x, acc_y, acc_z = fake_sensor_reading()
-        gyr_x, gyr_y, gyr_z = fake_sensor_reading()
+        roll, pitch, yaw = get_orientation_degrees(sense)
+        acc_x, acc_y, acc_z = get_accelerometer_geforce(sense)
+        gyr_x, gyr_y, gyr_z = get_gyroscope_radians(sense)
+        # roll, pitch, yaw = fake_sensor_reading()
+        # acc_x, acc_y, acc_z = fake_sensor_reading()
+        # gyr_x, gyr_y, gyr_z = fake_sensor_reading()
 
         reading = pd.DataFrame(
           {
