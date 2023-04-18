@@ -1,6 +1,0 @@
-Setup instructions
-
-1: Make sure the "DECK1-Project-VMLog" folder is located on on the desktop or it may run into unforeseen problems
-3: Open terminal and run: sudo apt install python3-dotenv
-4: open the settings.env file in the scripts folder and change the unique identifier at the bottom
-5: Open terminal and run: sudo bash update_service.sh
